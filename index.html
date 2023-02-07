@@ -3,7 +3,7 @@
 <head>
     <title>Angga Public Radio</title>
     <style>
-        #example {
+        #centerscreen {
             top: 50%;
             left: 50%;
             width: 50%;
@@ -13,31 +13,36 @@
             position: fixed;
         }
 
-        #text {
-            color: white;
-            font-size: x-large;
-            font-weight: bold;
-        }
-
-        #textdiv{
+        #textdiv {
             padding-top: 5%;
         }
 
+        .button {
+            font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif);
+            background-color: #11e019;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            font-size: x-large;
+            margin: 4px 2px;
+            border-radius: 12px;
+        }
     </style>
 </head>
 
 <body bgcolor="#181818">
-    <div id="example">
+    <div id="centerscreen">
         <iframe style="border-radius:12px"
             src="https://open.spotify.com/embed/playlist/3erMMs6J6RoHNPQpBEgPyr?utm_source=generator&theme=0"
             width="100%" height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <div id="textdiv">
             <center>
-            <span id="text">
-                Login with Spotify to listen full song
-            </span>
-        </center>
+                <button class="button">Login with Spotify to listen full song</button>
+            </center>
         </div>
     </div>
 </body>
